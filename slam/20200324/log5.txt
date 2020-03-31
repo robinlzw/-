@@ -1,0 +1,186 @@
+lizw@lizw:~$ sudo apt-get install ros-kinetic-ga
+ros-kinetic-gateway-msgs        ros-kinetic-gazebo-ros
+ros-kinetic-gazebo-dev          ros-kinetic-gazebo-ros-control
+ros-kinetic-gazebo-msgs         ros-kinetic-gazebo-ros-pkgs
+ros-kinetic-gazebo-plugins      
+lizw@lizw:~$ sudo apt-get install ros-kinetic-ga
+ros-kinetic-gateway-msgs        ros-kinetic-gazebo-ros
+ros-kinetic-gazebo-dev          ros-kinetic-gazebo-ros-control
+ros-kinetic-gazebo-msgs         ros-kinetic-gazebo-ros-pkgs
+ros-kinetic-gazebo-plugins      
+lizw@lizw:~$ sudo apt-get install ros-kinetic-gazebo-plugins 
+[sudo] password for lizw: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ros-kinetic-gazebo-plugins is already the newest version (2.5.19-1xenial-20200109-025835+0000).
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+lizw@lizw:~$ sudo apt-get install ros-kinetic-g
+ros-kinetic-gateway-msgs               ros-kinetic-gps-goal
+ros-kinetic-gazebo-dev                 ros-kinetic-gps-umd
+ros-kinetic-gazebo-msgs                ros-kinetic-graph-msgs
+ros-kinetic-gazebo-plugins             ros-kinetic-grasping-msgs
+ros-kinetic-gazebo-ros                 ros-kinetic-grid-map
+ros-kinetic-gazebo-ros-control         ros-kinetic-gridmap-2d
+ros-kinetic-gazebo-ros-pkgs            ros-kinetic-grid-map-core
+ros-kinetic-gcloud-speech              ros-kinetic-grid-map-costmap-2d
+ros-kinetic-gcloud-speech-msgs         ros-kinetic-grid-map-cv
+ros-kinetic-gcloud-speech-utils        ros-kinetic-grid-map-demos
+ros-kinetic-gdrive-ros                 ros-kinetic-grid-map-filters
+ros-kinetic-gencpp                     ros-kinetic-grid-map-loader
+ros-kinetic-generic-throttle           ros-kinetic-grid-map-msgs
+ros-kinetic-geneus                     ros-kinetic-grid-map-octomap
+ros-kinetic-genjava                    ros-kinetic-grid-map-pcl
+ros-kinetic-genlisp                    ros-kinetic-grid-map-ros
+ros-kinetic-genmsg                     ros-kinetic-grid-map-rviz-plugin
+ros-kinetic-gennodejs                  ros-kinetic-grid-map-sdf
+ros-kinetic-genpy                      ros-kinetic-grid-map-visualization
+ros-kinetic-genrs                      ros-kinetic-gripit
+ros-kinetic-geodesy                    ros-kinetic-gripper-action-controller
+ros-kinetic-geographic-info            ros-kinetic-grizzly-control
+ros-kinetic-geographic-msgs            ros-kinetic-grizzly-description
+lizw@lizw:~$ sudo apt-get install ros-kinetic-gazebo-
+ros-kinetic-gazebo-dev          ros-kinetic-gazebo-ros
+ros-kinetic-gazebo-msgs         ros-kinetic-gazebo-ros-control
+ros-kinetic-gazebo-plugins      ros-kinetic-gazebo-ros-pkgs
+lizw@lizw:~$ sudo apt-get install ros-kinetic-gazebo-ros
+ros-kinetic-gazebo-ros          ros-kinetic-gazebo-ros-pkgs
+ros-kinetic-gazebo-ros-control  
+lizw@lizw:~$ sudo apt-get install ros-kinetic-gazebo-ros-pkgs 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ros-kinetic-gazebo-ros-pkgs is already the newest version (2.5.19-1xenial-20200109-045116+0000).
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+lizw@lizw:~$ sudo apt-get install ros-kinetic-gazebo-ros-control 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ros-kinetic-gazebo-ros-control is already the newest version (2.5.19-1xenial-20200218-164814+0000).
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+lizw@lizw:~$ sudo apt-get install ros-kinetic-joint
+ros-kinetic-joint-limits-interface
+ros-kinetic-joint-qualification-controllers
+ros-kinetic-joint-state-controller
+ros-kinetic-joint-state-publisher
+ros-kinetic-joint-state-publisher-gui
+ros-kinetic-joint-states-settler
+ros-kinetic-jointstick
+ros-kinetic-joint-trajectory-action
+ros-kinetic-joint-trajectory-action-tools
+ros-kinetic-joint-trajectory-controller
+ros-kinetic-joint-trajectory-generator
+lizw@lizw:~$ sudo apt-get install ros-kinetic-joint
+ros-kinetic-joint-limits-interface
+ros-kinetic-joint-qualification-controllers
+ros-kinetic-joint-state-controller
+ros-kinetic-joint-state-publisher
+ros-kinetic-joint-state-publisher-gui
+ros-kinetic-joint-states-settler
+ros-kinetic-jointstick
+ros-kinetic-joint-trajectory-action
+ros-kinetic-joint-trajectory-action-tools
+ros-kinetic-joint-trajectory-controller
+ros-kinetic-joint-trajectory-generator
+lizw@lizw:~$ sudo apt-get install ros-kinetic-joint-state
+ros-kinetic-joint-state-controller     ros-kinetic-joint-state-publisher-gui
+ros-kinetic-joint-state-publisher      ros-kinetic-joint-states-settler
+lizw@lizw:~$ sudo apt-get install ros-kinetic-joint-state-publisher
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  ros-kinetic-joint-state-publisher
+0 upgraded, 1 newly installed, 0 to remove and 27 not upgraded.
+Need to get 13.4 kB of archives.
+After this operation, 60.4 kB of additional disk space will be used.
+WARNING: The following packages cannot be authenticated!
+  ros-kinetic-joint-state-publisher
+Install these packages without verification? [y/N] y
+Get:1 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-joint-state-publisher amd64 1.12.15-1xenial-20200312-213847+0000 [13.4 kB]
+Fetched 13.4 kB in 0s (14.5 kB/s)                            
+Selecting previously unselected package ros-kinetic-joint-state-publisher.
+(Reading database ... 302705 files and directories currently installed.)
+Preparing to unpack .../ros-kinetic-joint-state-publisher_1.12.15-1xenial-20200312-213847+0000_amd64.deb ...
+Unpacking ros-kinetic-joint-state-publisher (1.12.15-1xenial-20200312-213847+0000) ...
+Setting up ros-kinetic-joint-state-publisher (1.12.15-1xenial-20200312-213847+0000) ...
+lizw@lizw:~$ vim ~/.bashrc 
+lizw@lizw:~$ source ~/.bashrc 
+lizw@lizw:~$ roscd robot_state^C
+lizw@lizw:~$ ^C
+lizw@lizw:~$ ^C
+lizw@lizw:~$ sudo apt-get install ros-kinetic-robot
+ros-kinetic-robot
+ros-kinetic-robot-activity
+ros-kinetic-robot-activity-msgs
+ros-kinetic-robot-activity-tutorials
+ros-kinetic-robot-calibration
+ros-kinetic-robot-calibration-msgs
+ros-kinetic-robot-controllers
+ros-kinetic-robot-controllers-interface
+ros-kinetic-robot-controllers-msgs
+ros-kinetic-robot-indicator
+ros-kinetic-robotis-controller
+ros-kinetic-robotis-controller-msgs
+ros-kinetic-robotis-device
+ros-kinetic-robotis-framework
+ros-kinetic-robotis-framework-common
+ros-kinetic-robotis-manipulator
+ros-kinetic-robotis-math
+ros-kinetic-robotis-op3
+ros-kinetic-robotis-op3-common
+ros-kinetic-robotis-op3-demo
+ros-kinetic-robotis-op3-msgs
+ros-kinetic-robotis-op3-tools
+ros-kinetic-robotis-utility
+lizw@lizw:~$ sudo apt-get install ros-kinetic-robot-state
+ros-kinetic-robot-statemachine     ros-kinetic-robot-state-publisher
+lizw@lizw:~$ sudo apt-get install ros-kinetic-robot-state-publisher 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  ros-kinetic-kdl-parser ros-kinetic-tf2-kdl
+The following NEW packages will be installed:
+  ros-kinetic-kdl-parser ros-kinetic-robot-state-publisher ros-kinetic-tf2-kdl
+0 upgraded, 3 newly installed, 0 to remove and 27 not upgraded.
+Need to get 94.4 kB of archives.
+After this operation, 617 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+WARNING: The following packages cannot be authenticated!
+  ros-kinetic-kdl-parser ros-kinetic-tf2-kdl ros-kinetic-robot-state-publisher
+Install these packages without verification? [y/N] y
+Get:1 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-kdl-parser amd64 1.12.11-0xenial-20191214-075713+0000 [16.7 kB]
+Get:2 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-tf2-kdl amd64 0.5.20-0xenial-20191214-084558+0000 [11.7 kB]
+Get:3 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-robot-state-publisher amd64 1.13.7-1xenial-20200109-041139+0000 [66.0 kB]
+Fetched 94.4 kB in 1s (61.1 kB/s)                           
+Selecting previously unselected package ros-kinetic-kdl-parser.
+(Reading database ... 302719 files and directories currently installed.)
+Preparing to unpack .../ros-kinetic-kdl-parser_1.12.11-0xenial-20191214-075713+0000_amd64.deb ...
+Unpacking ros-kinetic-kdl-parser (1.12.11-0xenial-20191214-075713+0000) ...
+Selecting previously unselected package ros-kinetic-tf2-kdl.
+Preparing to unpack .../ros-kinetic-tf2-kdl_0.5.20-0xenial-20191214-084558+0000_amd64.deb ...
+Unpacking ros-kinetic-tf2-kdl (0.5.20-0xenial-20191214-084558+0000) ...
+Selecting previously unselected package ros-kinetic-robot-state-publisher.
+Preparing to unpack .../ros-kinetic-robot-state-publisher_1.13.7-1xenial-20200109-041139+0000_amd64.deb ...
+Unpacking ros-kinetic-robot-state-publisher (1.13.7-1xenial-20200109-041139+0000) ...
+Setting up ros-kinetic-kdl-parser (1.12.11-0xenial-20191214-075713+0000) ...
+Setting up ros-kinetic-tf2-kdl (0.5.20-0xenial-20191214-084558+0000) ...
+Setting up ros-kinetic-robot-state-publisher (1.13.7-1xenial-20200109-041139+0000) ...
+lizw@lizw:~$ vim ~/.bashrc 
+lizw@lizw:~$ 

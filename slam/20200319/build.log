@@ -1,0 +1,46 @@
+lizw@lizw:~/catkin_ws$ catkin_make_isolated  --install --use-ninja
+
+CMake Warning at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:76 (find_package):
+  Could not find a package configuration file provided by "tf2_geometry_msgs"
+  with any of the following names:
+
+    tf2_geometry_msgsConfig.cmake
+    tf2_geometry_msgs-config.cmake
+
+  Add the installation prefix of "tf2_geometry_msgs" to CMAKE_PREFIX_PATH or
+  set "tf2_geometry_msgs_DIR" to a directory containing one of the above
+  files.  If "tf2_geometry_msgs" provides a separate development package or
+  SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:4 (find_package)
+
+
+-- Could not find the required component 'tf2_geometry_msgs'. The following CMake error indicates that you either need to install the package with the same name or change your environment so that it can be found.
+CMake Error at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "tf2_geometry_msgs"
+  with any of the following names:
+
+    tf2_geometry_msgsConfig.cmake
+    tf2_geometry_msgs-config.cmake
+
+  Add the installation prefix of "tf2_geometry_msgs" to CMAKE_PREFIX_PATH or
+  set "tf2_geometry_msgs_DIR" to a directory containing one of the above
+  files.  If "tf2_geometry_msgs" provides a separate development package or
+  SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:4 (find_package)
+
+
+apt-cache search  tf2_geometry_msgs
+sudo apt-get install ros-kinetic-tf2-geometry-msgs
+lizw@lizw:~/catkin_ws$ sudo apt-get install ros-kinetic-filters 
+
+
+sudo apt-get install ros-kinetic-tf2-sensor-msgs rapidjson-dev    ros-kinetic-realtime-tools 
+sudo apt-get install ros-kinetic-cmake-modules
+sudo apt-get install ros-kinetic-roslint
+sudo apt-get install ros-kinetic-libg2o
+
+
+
+

@@ -1,0 +1,30 @@
+lizw@lizw:/opt/ros/kinetic/share/turtlebot3_teleop/launch$ rqt_graph 
+
+lizw@lizw:~$ rostopic list 
+/clock
+/cmd_vel
+/gazebo/link_states
+/gazebo/model_states
+/gazebo/parameter_descriptions
+/gazebo/parameter_updates
+/gazebo/set_link_state
+/gazebo/set_model_state
+/gazebo_gui/parameter_descriptions
+/gazebo_gui/parameter_updates
+/joint_states
+/odom
+/rosout
+/rosout_agg
+/scan
+/sonar_0
+/sonar_1
+/sonar_2
+/sonar_3
+/sonar_4
+/sonar_5
+/sonar_6
+/sonar_7
+/statistics
+/tf
+/tf_static
+lizw@lizw:~$ rqt

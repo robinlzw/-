@@ -1,0 +1,10 @@
+sudo apt-get install ros-kinetic-tf2-geometry-msgs
+sudo apt-get install ros-kinetic-filters 
+sudo apt-get install ros-kinetic-tf2-sensor-msgs rapidjson-dev    ros-kinetic-realtime-tools 
+sudo apt-get install ros-kinetic-cmake-modules
+sudo apt-get install ros-kinetic-roslint
+sudo apt-get install ros-kinetic-libg2o
+
+
+
+
