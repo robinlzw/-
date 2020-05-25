@@ -1,5 +1,6 @@
 #1.设置虚拟环境
 conda create -n TF2.1 python=3.7
+conda activate TF2.1
 
 #2.安装 gpu 驱动
 conda install cudatoolkit=10.1
