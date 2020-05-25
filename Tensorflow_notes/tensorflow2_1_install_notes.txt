@@ -1,0 +1,17 @@
+#1.设置虚拟环境
+conda create -n TF2.1 python=3.7
+
+#2.安装 gpu 驱动
+conda install cudatoolkit=10.1
+conda install cudnn=7.6
+
+#3.安装TF
+# pip install tensorflow==2.1
+pip install --upgrade --ignore-installed tensorflow==2.1 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+
+#4.测试
+import tensorflow as tf
+tf.__version__
+
+#5.安装 pycharm
+https://www.icourse163.org/learn/PKU-1002536002?tid=1452937471#/learn/content?type=detail&id=1229556595
