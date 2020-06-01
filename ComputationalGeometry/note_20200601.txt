@@ -1,0 +1,20 @@
+https://www.zhihu.com/question/27213170
+
+#判断两条多段线重叠的算法
+https://www.cnblogs.com/vmyspace/archive/2012/09/13/2683460.html
+
+#两个轨迹相似性的各种方法
+https://blog.csdn.net/define_us/article/details/79758636
+
+#曲线相似度Fréchet distance
+https://www.jianshu.com/p/268d31aee5c3
+
+#Map Matching-轨迹相似性度量算法-Discrete Frechet Distance
+https://zhuanlan.zhihu.com/p/74561481
+
+https://github.com/search?l=C%2B%2B&q=frechet+distance&type=Repositories
+
+
+#计算几何学 | 距离 | Distance | C/C++实现  少女終末旅行 
+https://blog.csdn.net/qq_40998706/article/details/87449084?utm_medium=distribute.pc_relevant_download.none-task-blog-BlogCommendFromBaidu_21-13.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-BlogCommendFromBaidu_21-13.nonecase
+
