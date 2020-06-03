@@ -18,3 +18,21 @@ https://github.com/search?l=C%2B%2B&q=frechet+distance&type=Repositories
 #计算几何学 | 距离 | Distance | C/C++实现  少女終末旅行 
 https://blog.csdn.net/qq_40998706/article/details/87449084?utm_medium=distribute.pc_relevant_download.none-task-blog-BlogCommendFromBaidu_21-13.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-BlogCommendFromBaidu_21-13.nonecase
 
+#CGL_2_D——Distance（求两线段距离）
+https://blog.csdn.net/weixin_41380961/article/details/99654425?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
+
+#简单几何(相对运动距离最值) UVA 11796 Dog Distance
+https://blog.csdn.net/weixin_33970449/article/details/93263122
+
+#相对运动模拟：UVa 11796 Dog Distance
+https://blog.csdn.net/u012717411/article/details/44001739
+
+#UVA 11796 Dog Distance
+https://www.cnblogs.com/tenlee/p/4420121.html
+
+#C++实现三维空间中直线间距离的计算
+https://blog.csdn.net/yang_deyuan/article/details/79152647?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
+
+#计算空间中两条线段的最小距离
+https://blog.csdn.net/pppaass/article/details/46775123?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159108191019725222453895%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=159108191019725222453895&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_blog_default-14-46775123.pc_v2_rank_blog_default&utm_term=%E4%B8%A4%E4%B8%AA%E7%BA%BF%E6%AE%B5%E9%9B%86%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%9D%E7%A6%BB
+
