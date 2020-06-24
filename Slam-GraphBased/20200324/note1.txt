@@ -1,0 +1,16 @@
+roslaunch yunshen_robot_gazebo yunshen_robot_cartographer_gazebo.launch
+roslaunch yunshen_robot_gazebo yunshen_robot.launch
+
+ERROR: cannot launch node of type [joint_state_publisher/joint_state_publisher]: joint_state_publisher
+ERROR: cannot launch node of type [robot_state_publisher/state_publisher]: robot_state_publisher
+
+sudo apt-get install ros-kinetic-gazebo-plugins
+sudo apt-get install ros-kinetic-gazebo-ros-pkgs
+sudo apt-get install ros-kinetic-gazebo-ros-control
+sudo apt-get install ros-kinetic-joint
+sudo apt-get install ros-kinetic-joint-state
+sudo apt-get install ros-kinetic-joint-state-publisher
+sudo apt-get install ros-kinetic-robot
+
+rostopic echo /cmd_ve
+

@@ -1,0 +1,439 @@
+lizw@lizw:~/catkin_ws/src$ roslaunch yunshen_robot_gazebo   yunshen_robot.launch
+... logging to /home/lizw/.ros/log/25f453d0-6d7c-11ea-8f9b-6045cb849c7e/roslaunch-lizw-20669.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+xacro: Traditional processing is deprecated. Switch to --inorder processing!
+To check for compatibility of your document, use option --check-order.
+For more infos, see http://wiki.ros.org/xacro#Processing_Order
+deprecated: xacro tags should be prepended with 'xacro' xml namespace.
+Use the following script to fix incorrect usage:
+        find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
+when processing file: /home/lizw/catkin_ws/install_isolated/share/yunshen_robot_description/urdf/arch_angel.urdf.xacro
+
+xacro.py is deprecated; please use xacro instead
+started roslaunch server http://localhost:44199/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    spawn_urdf (gazebo_ros/spawn_model)
+
+auto-starting new master
+process[master]: started with pid [20682]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 25f453d0-6d7c-11ea-8f9b-6045cb849c7e
+process[rosout-1]: started with pid [20695]
+started core service [/rosout]
+process[gazebo-2]: started with pid [20710]
+process[gazebo_gui-3]: started with pid [20724]
+process[spawn_urdf-4]: started with pid [20729]
+ERROR: cannot launch node of type [joint_state_publisher/joint_state_publisher]: joint_state_publisher
+ROS path [0]=/opt/ros/kinetic/share/ros
+ROS path [1]=/home/lizw/catkin_ws/src/base/robBase/yunshen_robot_testsuite
+ROS path [2]=/home/lizw/catkin_ws/install_isolated/share
+ROS path [3]=/opt/ros/kinetic/share
+ERROR: cannot launch node of type [robot_state_publisher/state_publisher]: robot_state_publisher
+ROS path [0]=/opt/ros/kinetic/share/ros
+ROS path [1]=/home/lizw/catkin_ws/src/base/robBase/yunshen_robot_testsuite
+ROS path [2]=/home/lizw/catkin_ws/install_isolated/share
+ROS path [3]=/opt/ros/kinetic/share
+[ INFO] [1585019057.839829647]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019057.840377365]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1585019057.862001227]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019057.862880741]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1585019058.879305675, 0.021000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019058.905353230, 0.046000000]: Physics dynamic reconfigure ready.
+[ INFO] [1585019058.930852801, 0.071000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019058.951846594, 0.091000000]: Physics dynamic reconfigure ready.
+[ INFO] [1585019059.661608344, 0.228000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[ INFO] [1585019059.661673197, 0.228000000]: Starting Laser Plugin (ns = /)
+[ INFO] [1585019059.662800084, 0.228000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1585019059.798072710, 0.228000000]: Starting plugin DiffDrive(ns = //)
+[ INFO] [1585019059.798117846, 0.228000000]: DiffDrive(ns = //): <rosDebugLevel> = na
+[ INFO] [1585019059.798749801, 0.228000000]: DiffDrive(ns = //): <tf_prefix> = 
+[ INFO] [1585019059.799491883, 0.228000000]: DiffDrive(ns = //): Advertise joint_states
+[ INFO] [1585019059.800038719, 0.228000000]: DiffDrive(ns = //): Try to subscribe to cmd_vel
+[ INFO] [1585019059.802156023, 0.228000000]: DiffDrive(ns = //): Subscribe to cmd_vel
+[ INFO] [1585019059.802613342, 0.228000000]: DiffDrive(ns = //): Advertise odom on odom 
+[spawn_urdf-4] process has finished cleanly
+log file: /home/lizw/.ros/log/25f453d0-6d7c-11ea-8f9b-6045cb849c7e/spawn_urdf-4*.log
+^C[gazebo_gui-3] killing on exit
+[gazebo-2] killing on exit
+^C^C[gazebo-2] escalating to SIGTERM
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+lizw@lizw:~/catkin_ws/src$ roscd joint_state_publisher
+roscd: No such package/stack 'joint_state_publisher'
+lizw@lizw:~/catkin_ws/src$ ls 
+ast_common  ast_misc  ast_sensors  base  CMakeLists.txt  navigation  robLaunch  robSimulator  slam  test.config  test.creator  test.creator.user  test.files  test.includes
+lizw@lizw:~/catkin_ws/src$ cd ..
+lizw@lizw:~/catkin_ws$ ls 
+build_isolated     devel_isolated  install_isolated  robot.workspace.user  ys_robot.config   ys_robot.creator.user  ys_robot.includes
+crmcl_dockerimage  firmware        robot.workspace   src                   ys_robot.creator  ys_robot.files
+lizw@lizw:~/catkin_ws$ source ./install_isolated/setup.bash 
+lizw@lizw:~/catkin_ws$ roslaunch yunshen_robot_gazebo   yunshen_robot.launch
+... logging to /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/roslaunch-lizw-21296.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+xacro: Traditional processing is deprecated. Switch to --inorder processing!
+To check for compatibility of your document, use option --check-order.
+For more infos, see http://wiki.ros.org/xacro#Processing_Order
+deprecated: xacro tags should be prepended with 'xacro' xml namespace.
+Use the following script to fix incorrect usage:
+        find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
+when processing file: /home/lizw/catkin_ws/install_isolated/share/yunshen_robot_description/urdf/arch_angel.urdf.xacro
+
+xacro.py is deprecated; please use xacro instead
+started roslaunch server http://localhost:39293/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    spawn_urdf (gazebo_ros/spawn_model)
+
+auto-starting new master
+process[master]: started with pid [21309]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 6164c8f0-6d7c-11ea-8f9b-6045cb849c7e
+process[rosout-1]: started with pid [21322]
+started core service [/rosout]
+process[gazebo-2]: started with pid [21336]
+process[gazebo_gui-3]: started with pid [21351]
+process[spawn_urdf-4]: started with pid [21356]
+ERROR: cannot launch node of type [joint_state_publisher/joint_state_publisher]: joint_state_publisher
+ROS path [0]=/opt/ros/kinetic/share/ros
+ROS path [1]=/home/lizw/catkin_ws/src/base/robBase/yunshen_robot_testsuite
+ROS path [2]=/home/lizw/catkin_ws/install_isolated/share
+ROS path [3]=/opt/ros/kinetic/share
+ERROR: cannot launch node of type [robot_state_publisher/state_publisher]: robot_state_publisher
+ROS path [0]=/opt/ros/kinetic/share/ros
+ROS path [1]=/home/lizw/catkin_ws/src/base/robBase/yunshen_robot_testsuite
+ROS path [2]=/home/lizw/catkin_ws/install_isolated/share
+ROS path [3]=/opt/ros/kinetic/share
+[ INFO] [1585019157.594482687]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019157.594816661]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1585019157.636074232]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019157.636592256]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1585019158.634955353, 0.022000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019158.659145352, 0.045000000]: Physics dynamic reconfigure ready.
+[ INFO] [1585019158.760711780, 0.143000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019159.423016920, 0.235000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[ INFO] [1585019159.423070366, 0.235000000]: Starting Laser Plugin (ns = /)
+[ INFO] [1585019159.424100617, 0.235000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1585019159.561211160, 0.235000000]: Starting plugin DiffDrive(ns = //)
+[ INFO] [1585019159.561272127, 0.235000000]: DiffDrive(ns = //): <rosDebugLevel> = na
+[ INFO] [1585019159.561918647, 0.235000000]: DiffDrive(ns = //): <tf_prefix> = 
+[ INFO] [1585019159.562842930, 0.235000000]: DiffDrive(ns = //): Advertise joint_states
+[ INFO] [1585019159.563675137, 0.235000000]: DiffDrive(ns = //): Try to subscribe to cmd_vel
+[ INFO] [1585019159.568183206, 0.235000000]: DiffDrive(ns = //): Subscribe to cmd_vel
+[ INFO] [1585019159.569113478, 0.235000000]: DiffDrive(ns = //): Advertise odom on odom 
+[ INFO] [1585019159.569522111, 0.236000000]: Physics dynamic reconfigure ready.
+[spawn_urdf-4] process has finished cleanly
+log file: /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/spawn_urdf-4*.log
+[gazebo_gui-3] process has finished cleanly
+log file: /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/gazebo_gui-3*.log
+^C[gazebo-2] killing on exit
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C
+
+^C
+^C^\
+Quit (core dumped)
+lizw@lizw:~/catkin_ws$ 
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+^C
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ sudo apt-get  install  ros-kinAborted (core dumped)
+etic-^C
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ roslaunch yunshen_robot_gazebo   yunshen_robot.launch
+... logging to /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/roslaunch-lizw-22101.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+xacro: Traditional processing is deprecated. Switch to --inorder processing!
+To check for compatibility of your document, use option --check-order.
+For more infos, see http://wiki.ros.org/xacro#Processing_Order
+deprecated: xacro tags should be prepended with 'xacro' xml namespace.
+Use the following script to fix incorrect usage:
+        find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
+when processing file: /home/lizw/catkin_ws/install_isolated/share/yunshen_robot_description/urdf/arch_angel.urdf.xacro
+
+xacro.py is deprecated; please use xacro instead
+started roslaunch server http://localhost:34563/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    spawn_urdf (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[gazebo-1]: started with pid [22121]
+process[gazebo_gui-2]: started with pid [22126]
+process[spawn_urdf-3]: started with pid [22131]
+process[joint_state_publisher-4]: started with pid [22132]
+ERROR: cannot launch node of type [robot_state_publisher/state_publisher]: robot_state_publisher
+ROS path [0]=/opt/ros/kinetic/share/ros
+ROS path [1]=/home/lizw/catkin_ws/src/base/robBase/yunshen_robot_testsuite
+ROS path [2]=/home/lizw/catkin_ws/install_isolated/share
+ROS path [3]=/opt/ros/kinetic/share
+[ INFO] [1585019300.166273999]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019300.166692796]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1585019300.200535954]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019300.200949219]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1585019301.193947888, 0.021000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019301.808656004, 0.029000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[ INFO] [1585019301.808708268, 0.029000000]: Starting Laser Plugin (ns = /)
+[ INFO] [1585019301.809845157, 0.029000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1585019301.957879173, 0.029000000]: Starting plugin DiffDrive(ns = //)
+[ INFO] [1585019301.957932663, 0.029000000]: DiffDrive(ns = //): <rosDebugLevel> = na
+[ INFO] [1585019301.958751423, 0.029000000]: DiffDrive(ns = //): <tf_prefix> = 
+[ INFO] [1585019301.959642382, 0.029000000]: DiffDrive(ns = //): Advertise joint_states
+[ INFO] [1585019301.960470265, 0.029000000]: DiffDrive(ns = //): Try to subscribe to cmd_vel
+[ INFO] [1585019301.964374445, 0.029000000]: DiffDrive(ns = //): Subscribe to cmd_vel
+[ INFO] [1585019301.965098243, 0.029000000]: DiffDrive(ns = //): Advertise odom on odom 
+[ INFO] [1585019301.965998454, 0.030000000]: Physics dynamic reconfigure ready.
+[ INFO] [1585019301.986945707, 0.050000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019302.010763511, 0.074000000]: Physics dynamic reconfigure ready.
+[spawn_urdf-3] process has finished cleanly
+log file: /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/spawn_urdf-3*.log
+^C[joint_state_publisher-4] killing on exit
+[gazebo_gui-2] killing on exit
+[gazebo-1] killing on exit
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+
+^C
+^C
+^C
+^C
+^C
+
+
+[gazebo-1] escalating to SIGTERM
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+lizw@lizw:~/catkin_ws$ 
+lizw@lizw:~/catkin_ws$ 
+lizw@lizw:~/catkin_ws$ 
+lizw@lizw:~/catkin_ws$ source ~/.bashrc 
+lizw@lizw:~/catkin_ws$ roslaunch yunshen_robot_gazebo   yunshen_robot.launch
+... logging to /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/roslaunch-lizw-22679.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+xacro: Traditional processing is deprecated. Switch to --inorder processing!
+To check for compatibility of your document, use option --check-order.
+For more infos, see http://wiki.ros.org/xacro#Processing_Order
+deprecated: xacro tags should be prepended with 'xacro' xml namespace.
+Use the following script to fix incorrect usage:
+        find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
+when processing file: /home/lizw/catkin_ws/install_isolated/share/yunshen_robot_description/urdf/arch_angel.urdf.xacro
+
+xacro.py is deprecated; please use xacro instead
+started roslaunch server http://localhost:38325/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    spawn_urdf (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[gazebo-1]: started with pid [22699]
+process[gazebo_gui-2]: started with pid [22704]
+process[spawn_urdf-3]: started with pid [22709]
+process[joint_state_publisher-4]: started with pid [22710]
+ERROR: cannot launch node of type [robot_state_publisher/state_publisher]: robot_state_publisher
+ROS path [0]=/opt/ros/kinetic/share/ros
+ROS path [1]=/home/lizw/catkin_ws/src/base/robBase/yunshen_robot_testsuite
+ROS path [2]=/home/lizw/catkin_ws/install_isolated/share
+ROS path [3]=/opt/ros/kinetic/share
+[ INFO] [1585019370.333060475]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019370.333410562]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1585019370.350661174]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019370.350998673]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1585019371.378807026, 0.022000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019372.009264665, 0.027000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[ INFO] [1585019372.009358206, 0.027000000]: Starting Laser Plugin (ns = /)
+[ INFO] [1585019372.010329542, 0.027000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1585019372.152535807, 0.027000000]: Starting plugin DiffDrive(ns = //)
+[ INFO] [1585019372.152592790, 0.027000000]: DiffDrive(ns = //): <rosDebugLevel> = na
+[ INFO] [1585019372.153880276, 0.027000000]: DiffDrive(ns = //): <tf_prefix> = 
+[ INFO] [1585019372.155025068, 0.027000000]: DiffDrive(ns = //): Advertise joint_states
+[ INFO] [1585019372.155896328, 0.027000000]: DiffDrive(ns = //): Try to subscribe to cmd_vel
+[ INFO] [1585019372.159829365, 0.027000000]: DiffDrive(ns = //): Subscribe to cmd_vel
+[ INFO] [1585019372.160663392, 0.027000000]: DiffDrive(ns = //): Advertise odom on odom 
+[ INFO] [1585019372.161436884, 0.028000000]: Physics dynamic reconfigure ready.
+[ INFO] [1585019372.183310602, 0.049000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019372.203999096, 0.069000000]: Physics dynamic reconfigure ready.
+[spawn_urdf-3] process has finished cleanly
+log file: /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/spawn_urdf-3*.log
+[gazebo_gui-2] process has finished cleanly
+log file: /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/gazebo_gui-2*.log
+^C[joint_state_publisher-4] killing on exit
+[gazebo-1] killing on exit
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C
+
+^C^C^C^C^C^C^C^C
+
+^C
+
+^C
+^C
+^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+
+^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C
+
+^C
+^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C[gazebo-1] escalating to SIGTERM
+^Cshutting down processing monitor...
+... shutting down processing monitor complete
+done
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ ^C
+lizw@lizw:~/catkin_ws$ roslaunch yunshen_robot_gazebo   yunshen_robot.launch
+... logging to /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/roslaunch-lizw-23432.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+xacro: Traditional processing is deprecated. Switch to --inorder processing!
+To check for compatibility of your document, use option --check-order.
+For more infos, see http://wiki.ros.org/xacro#Processing_Order
+deprecated: xacro tags should be prepended with 'xacro' xml namespace.
+Use the following script to fix incorrect usage:
+        find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
+when processing file: /home/lizw/catkin_ws/install_isolated/share/yunshen_robot_description/urdf/arch_angel.urdf.xacro
+
+xacro.py is deprecated; please use xacro instead
+started roslaunch server http://localhost:36493/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+    spawn_urdf (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[gazebo-1]: started with pid [23452]
+process[gazebo_gui-2]: started with pid [23457]
+process[spawn_urdf-3]: started with pid [23462]
+process[joint_state_publisher-4]: started with pid [23463]
+process[robot_state_publisher-5]: started with pid [23464]
+[ INFO] [1585019472.655127098]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019472.656287761]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1585019472.685209692]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1585019472.686013933]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1585019473.685752923, 0.022000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019474.279338581, 0.037000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[ INFO] [1585019474.279395864, 0.037000000]: Starting Laser Plugin (ns = /)
+[ INFO] [1585019474.280209759, 0.037000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[ INFO] [1585019474.418228462, 0.037000000]: Starting plugin DiffDrive(ns = //)
+[ INFO] [1585019474.418278397, 0.037000000]: DiffDrive(ns = //): <rosDebugLevel> = na
+[ INFO] [1585019474.419420053, 0.037000000]: DiffDrive(ns = //): <tf_prefix> = 
+[ INFO] [1585019474.420452296, 0.037000000]: DiffDrive(ns = //): Advertise joint_states
+[ INFO] [1585019474.421311263, 0.037000000]: DiffDrive(ns = //): Try to subscribe to cmd_vel
+[ INFO] [1585019474.425198179, 0.037000000]: DiffDrive(ns = //): Subscribe to cmd_vel
+[ INFO] [1585019474.426014036, 0.037000000]: DiffDrive(ns = //): Advertise odom on odom 
+[ INFO] [1585019474.426520608, 0.038000000]: Physics dynamic reconfigure ready.
+[ INFO] [1585019474.449136381, 0.059000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1585019474.469459225, 0.079000000]: Physics dynamic reconfigure ready.
+[spawn_urdf-3] process has finished cleanly
+log file: /home/lizw/.ros/log/6164c8f0-6d7c-11ea-8f9b-6045cb849c7e/spawn_urdf-3*.log
+^C[robot_state_publisher-5] killing on exit
+[joint_state_publisher-4] killing on exit
+[gazebo_gui-2] killing on exit
+[gazebo-1] killing on exit
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^Cc^Cc^C[gazebo-1] escalating to SIGTERM
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+lizw@lizw:~/catkin_ws$ rosed yunshen_robot_gazebo   yunshen_robot.launch
+lizw@lizw:~/catkin_ws$ 
