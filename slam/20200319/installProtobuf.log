@@ -1,9 +1,0 @@
-lizw@lizw:~/Downloads/protobuf/build$ ls
-build.ninja  CMakeCache.txt  CMakeFiles  cmake_install.cmake  lib  protobuf-lite.pc  protobuf.pc  rules.ninja
-lizw@lizw:~/Downloads/protobuf/build$ ninja
-[206/206] Linking CXX executable protoc
-lizw@lizw:~/Downloads/protobuf/build$ ls
-build.ninja     CMakeFiles           js_embed  libprotobuf.a       libprotoc.a       protobuf.pc  rules.ninja
-CMakeCache.txt  cmake_install.cmake  lib       libprotobuf-lite.a  protobuf-lite.pc  protoc
-lizw@lizw:~/Downloads/protobuf/build$ 
-
