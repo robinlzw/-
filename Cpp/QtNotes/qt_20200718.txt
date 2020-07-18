@@ -1,0 +1,23 @@
+其中有一个Windows 消息 WS_EX_TRANSPARENT 比较重要，
+它实现了鼠标穿透的功能
+
+
+ouseArea 有一个属性为 propagateComposedEvents，默认为 false，当设置为 true 时，
+就可以将事件传递给重叠的其他鼠标区域了（包括控件）
+
+Window flags
+
+#Qt 不规则窗体 – 鼠标点击穿透
+http://www.mitgai.net/2015/04/programming-language/qt-irregular-forms-click-through.html
+
+SetWindowLong(Handle, GWL_EXSTYLE, GetWindowLong(Handle, GWL_EXSTYLE) or
+                                     WS_EX_TRANSPARENT or //忽略一切消息（WM_PAINT除外）
+                                     WS_EX_LAYERED);      //层风格，有他才能支持半透明
+									 
+#   SuperZCZ / code
+https://gitee.com/SuperZCZ/code/tree/master
+
+flags: Qt.WA_TransparentForMouseEvent | Qt.WindowStaysOnTopHint 
+ | Qt.WA_TranslucentBackground | Qt.WA_WindowPropagation 
+ | Qt.SubWindow
+    

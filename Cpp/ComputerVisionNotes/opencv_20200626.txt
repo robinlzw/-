@@ -1,0 +1,14 @@
+#VS2019安装opencv4.2--图像识别实验记录
+https://blog.csdn.net/weixin_43611853/article/details/106311446?ops_request_misc=&request_id=&biz_id=102&utm_term=opencv-4.2.0-vc14_vc15.exe&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-3-106311446
+
+#安装 | OpenCV4.2.0 + VS2017安装教程
+https://blog.csdn.net/u011344545/article/details/105310048/
+
+#VS2017配置opencv-4.2.0详细步骤
+https://www.cnblogs.com/cxyxm/p/12382990.html
+
+C:\Users\Administrator\source\repos
+#Windows10下编译OpenCV-4.2.0
+https://www.bilibili.com/video/BV177411d7Tc?p=5
+
+
