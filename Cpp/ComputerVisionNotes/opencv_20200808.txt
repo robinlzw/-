@@ -1,0 +1,10 @@
+#How do I detect the centerline of an object
+https://answers.opencv.org/question/31908/how-do-i-detect-the-centerline-of-an-object/
+
+#drawContours
+https://docs.opencv.org/2.4/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html?highlight=drawcontours#drawcontours
+
+#Arnaud Ramey
+https://sites.google.com/site/rameyarnaud/research/c/voronoi
+
+Skeletonization in opencv
