@@ -1,0 +1,17 @@
+#自动驾驶路径规划-Voronoi Planner
+https://zhuanlan.zhihu.com/p/135441089
+
+#Robot Path Planning Using Generalized Voronoi Diagrams
+https://www.cs.columbia.edu/~pblaer/projects/path_planner/
+
+#文献阅读之Voronoi图的生成与更新
+https://zhuanlan.zhihu.com/p/127356467
+
+#路径规划算法总结
+https://zhuanlan.zhihu.com/p/51372134
+
+#【浅入浅出】教你实现最简单的Voronoi图
+https://zhuanlan.zhihu.com/p/144477570
+
+#A GPU Approach to Voronoi Diagrams
+https://nullprogram.com/blog/2014/06/01/
