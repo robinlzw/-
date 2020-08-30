@@ -1,0 +1,14 @@
+Administrator@VCPA6TJE7M8IM9S MINGW64 /d/Dev01_C++/my_git_workspace/qt_projects (master)
+$ git checkout -b ysRobotClient_stable origin/ysRobotClient_stable
+Switched to a new branch 'ysRobotClient_stable'
+Branch 'ysRobotClient_stable' set up to track remote branch 'ysRobotClient_stable' from 'origin'.
+
+Administrator@VCPA6TJE7M8IM9S MINGW64 /d/Dev01_C++/my_git_workspace/qt_projects (ysRobotClient_stable)
+$ git status
+On branch ysRobotClient_stable
+Your branch is up to date with 'origin/ysRobotClient_stable'.
+
+nothing to commit, working tree clean
+
+Administrator@VCPA6TJE7M8IM9S MINGW64 /d/Dev01_C++/my_git_workspace/qt_projects (ysRobotClient_stable)
+$
