@@ -1,0 +1,9 @@
+D:Program Files\dev\CGAL-5.0\auxiliary\gmp\lib
+
+C:\Users\lenovo\Downloads\vcpkg-master\installed\x64-windows\include
+C:\Users\lenovo\Downloads\vcpkg-master\installed\x64-windows\lib
+
+#gitee 账户
+robinlzw
+lizhengweijsut@163.com
+lzwGitee163
