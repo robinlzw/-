@@ -1,0 +1,95 @@
+#include<iostream>
+#include<boost/shared_ptr.hpp>
+#include<CGAL/Exact_predicates_inexact_constructions_kernel.h>
+#include<CGAL/Polygon_with_holes_2.h>
+#include<CGAL/create_straight_skeleton_from_polygon_with_holes_2.h>
+#include<CGAL/create_offset_polygons_2.h>
+
+#include<GL/glut.h>//openGL头文件
+
+typedef CGAL::Exact_predicates_inexact_constructions_kernel  K;//几何内核
+typedef K::Point_2  Point;
+typedef CGAL::Polygon_2<K>  My_Polygon;
+typedef CGAL::Polygon_with_holes_2<K>  Polygon_with_holes;
+typedef CGAL::Straight_skeleton_2<K>  Ss;//轮廓中轴数据类型
+typedef boost::shared_ptr<Ss> SsPtr;//boost库智能指针，使用类似vector<Ss>
+//cgal以半边数据结构存储一个轮廓
+typedef typename Ss::Vertex_const_handle     Vertex_const_handle;
+typedef typename Ss::Halfedge_const_handle   Halfedge_const_handle;
+typedef typename Ss::Halfedge_const_iterator Halfedge_const_iterator;
+typedef boost::shared_ptr<My_Polygon> PolygonPtr;
+typedef std::vector<PolygonPtr> PolygonPtrVector;
+typedef My_Polygon::Vertex_iterator  polytgon_it;
+typedef PolygonPtrVector::const_iterator it;
+
+PolygonPtrVector temp_offset_polygons;
+SsPtr temp_iss;
+//函数display1()应用openGL接口，实现轮廓中轴骨架的可视化
+void display1() {
+ glClear(GL_COLOR_BUFFER_BIT);
+ glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+ glColor3f(0, 1, 0);
+ for (Halfedge_const_iterator i = (*temp_iss).halfedges_begin(); i != (*temp_iss).halfedges_end(); ++i) {
+  glBegin(GL_LINES);
+  glVertex2d(i->opposite()->vertex()->point().x(), i->opposite()->vertex()->point().y());
+  glVertex2d(i->vertex()->point().x(), i->vertex()->point().y());
+  glEnd();
+  glFinish();
+ }//openGL画图时用的回调函数，这里只是简单地画出轮廓；
+}
+//函数display2()应用openGL接口，实现偏置后轮廓的可视化
+void display2() {
+ glClear(GL_COLOR_BUFFER_BIT);
+ glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+ glColor3f(0, 0, 1);
+  for (it kk = temp_offset_polygons.begin(); kk != temp_offset_polygons.end(); ++kk) {
+   glBegin(GL_POLYGON);
+   for (polytgon_it ll = (**kk).vertices_begin(); ll != (**kk).vertices_end(); ++ll)
+    glVertex2d((*ll).x(), (*ll).y());
+   glEnd();
+   glFinish();
+}//openGL画图时用的回调函数，这里只是简单地画出轮廓;
+ }
+
+
+int main(int argc, char* argv[])
+{
+ My_Polygon outer;
+ outer.push_back(Point(-200, -200));
+ outer.push_back(Point(200, -200));
+ outer.push_back(Point(200, 200));
+ outer.push_back(Point(-200, 200));
+ 
+ My_Polygon hole;
+ hole.push_back(Point(-100, 100));
+ hole.push_back(Point(100, 100));
+ hole.push_back(Point(100, -100));
+ hole.push_back(Point(-100, -100));
+
+Polygon_with_holes poly(outer);
+ poly.add_hole(hole);//这样就简单地定义了一个带孔的轮廓（这轮廓和效果图不一样）
+
+ SsPtr iss = CGAL::create_interior_straight_skeleton_2(poly);
+ temp_iss = iss;
+
+double offset = 20;
+PolygonPtrVector polygon_offset=CGAL::create_offset_polygons_2<My_Polygon>(offset, *iss)；
+temp_offset_polygons=polygon_offset;
+
+glutInit(&argc, argv);   //初始化GLUT
+ glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+ glutInitWindowPosition(300, 300);
+ glutInitWindowSize(800, 800);
+ glutCreateWindow("jienan");
+ glClearColor(0.0, 0.0, 0.0, 0);
+ glClear(GL_COLOR_BUFFER_BIT);
+ glPointSize(1);
+ glMatrixMode(GL_MODELVIEW);
+ glLoadIdentity();
+ gluOrtho2D(-400, 400, -400, 400);
+ glutDisplayFunc(&display1);//回调display1或者display2，进行轮廓的绘画展示
+ glutMainLoop();    //持续显示，当窗口改变会重新绘制图形
+
+ getchar();
+ return 0;
+}

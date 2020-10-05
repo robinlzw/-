@@ -1,0 +1,8 @@
+#一套完善的lua与c++交互框架
+http://www.cppblog.com/iwindows/archive/2018/09/26/215947.aspx
+
+#搭建C++调用Lua环境
+https://zhuanlan.zhihu.com/p/96403566
+
+#vs2017编译Lua最新源码，生成动态链接库版本
+https://blog.csdn.net/hp_cpp/article/details/104568732/
